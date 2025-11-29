@@ -1,0 +1,91 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            justify-content: center;
+            display:flex;
+            flex-direction:column;
+            /* padding:500px; */
+
+        }
+        button{
+            margin:15px;
+            margin-left:530px;
+            /* padding-left: 200px; */
+            justify-items: center;
+            text-align:center;
+            height:35px;
+            width:100px;
+            border:1px solid grey;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        div{
+            font-size: 28px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div id="image">Background image</div>
+    
+    <button onclick="changeimage('changeimage')">Watch Me </button>
+    <script>
+        function changeimage(changeimage){
+            let image=document.getElementById("image")
+            image.src="https://mf.b37mrtl.ru/rbthmedia/images/2023.01/original/63c54448fa390f007f458924.jpg"
+            document.body.style.backgrounImage=changeimage
+            document.body.style.backgroudRepeat="no-Repeat"
+            document.body.appendChild(image)
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+        }
+        button{
+            margin: 15px auto;
+            height: 35px;
+            width: 100px;
+            border: 1px solid grey;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #image{
+            font-size: 28px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div id="image">Background image</div>
+    
+    <button onclick="changeimage()">Watch Me</button>
+
+    <script>
+        function changeimage() {
+            document.body.style.backgroundImage = "url('https://mf.b37mrtl.ru/rbthmedia/images/2023.01/original/63c54448fa390f007f458924.jpg')";
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundSize = "cover"; // optional: full screen
+        }
+    </script>
+</body>
+</html>

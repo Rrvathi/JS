@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            display:flex;
+            height: 30px;
+            width:90px;
+            justify-content: center;
+            padding-top: 5px;
+            margin: 10px;
+            cursor:pointer;
+        }
+        body{
+            justify-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1️⃣ Show 6 color buttons (e.g., Red, Green, Blue, Yellow, Pink, Black).
+ 2️⃣ When a color button is clicked:
+Create a box (div) using createElement -->
+<div>
+<button onclick="color('red')">Red</button>
+<button onclick="color('green')">Green</button>
+<button onclick="color('blue')">blue</button>
+<button onclick="color('yellow')">Yellow</button>
+<button onclick="color('grey')">Grey</button>
+<button onclick="color('purple')">purple</button>
+<!-- <button onclick="clearall()">clear all</button> -->
+</div>
+
+<script>
+    // let remove_btn=document.createElement("button")
+    // remove_btn.innerHTML="clear all"
+    // dcoument.body.appendChild(remove_btn)
+    let div=document.createElement("div")
+    div.innerHTML="select  color"
+    div.style.backgroundColor="grey"
+    div.style.width="90px"
+    div.style.height="30px"
+    div.style.textAlign="center"
+    div.style.paddingTop="10px"
+    div.style.cursor="pointer"
+    let b=document.createElement("b")
+    // b.innerHTML="❌"
+    b.style.position = "absolute";
+    b.style.center = "4px";
+    b.style.left = "400px";
+    // b.style.top="30px"
+    b.style.cursor = "pointer";
+    b.style.fontSize = "20px";
+    // del.style.color = "white";    
+    document.body.appendChild(div);
+    document.body.appendChild(b);
+    let bre=document.createElement("br")
+    document.body.appendChild(bre)
+    function color(color){
+
+        document.body.style.backgroundColor=color
+        console.log("triggered...")
+    }
+    let box = document.createElement("div")
+    box.style.backgroundColor = "red"
+    box.style.width = "150px"
+    box.style.height = "150px"
+    box.style.marginRight="450px"
+    box.innerHTML="❌"
+    //  box.style.position = "absolute";
+    // box.style.center = "4px";
+    // box.style.left = "400px";
+    // b.style.top="30px"
+    box.style.cursor = "pointer";
+    // box.style.fontSize = "20px";
+    document.body.appendChild(box)
+    let br=document.createElement("br")
+    document.body.appendChild(br)
+    let abox = document.createElement("div")
+    abox.style.backgroundColor = "green"
+    abox.style.width = "150px"
+    abox.style.height = "150px"
+    abox.style.marginTop="-170px"
+    abox.style.marginRight="120px"
+    abox.innerHTML="❌"
+    abox.style.cursor = "pointer";
+    document.body.appendChild(abox)
+    abox.style.marign="30px"
+    let br2=document.createElement("br")
+    document.body.appendChild(br2)
+    let bbox = document.createElement("div")
+    bbox.style.backgroundColor = "blue"
+    bbox.style.width = "150px"
+    bbox.style.height = "150px"
+    bbox.style.marginTop="-170px"
+    bbox.style.marginLeft="200px"
+    bbox.innerHTML="❌"
+    bbox.style.cursor = "pointer";
+    document.body.appendChild(bbox)
+    let cbox = document.createElement("div")
+    cbox.style.backgroundColor = "grey"
+    cbox.style.width = "150px"
+    cbox.style.height = "150px"
+    cbox.style.marginTop="-150px"
+    cbox.style.marginLeft="530px"
+    cbox.innerHTML="❌"
+    cbox.style.cursor = "pointer";
+    cbox.style.marign="30px"
+    document.body.appendChild(cbox)
+
+    let arr=["red","green","blue","orange"]
+    for(let i=0;i<4;i++){
+        document.body.append(arr[i])
+
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width:310px;
+            height:350px;
+        }
+        body{
+            text-align:center;
+            height:100vh;
+        }
+        button{
+            height:40px;
+            width:100px;
+            border-radius: 5%;
+            border:1px solid grey;
+            cursor:pointer;
+            background-color:rgb(34, 186, 34);
+        }
+    </style>
+</head>
+<body>
+    <h1>Background color</h1>
+    <img src="https://wallpaperaccess.com/full/3160739.jpg"><br>
+    <button onclick="intialcolor()">intial</button><br><br>
+    <button onclick="redcolor()">Red</button><br><br>
+    <button onclick="greencolor()">Green</button><br><br>
+    <button onclick="bluecolor()">Blue</button><br><br>
+    <button onclick="greycolor()">Grey</button>
+
+
+    <script>
+        function intialcolor(){
+            document.body.style.backgroundColor="pink"
+        }
+        function redcolor(){
+            document.body.style.backgroundColor="red"
+        }
+        function greencolor(){
+            document.body.style.backgroundColor="green"
+        }
+        function bluecolor(){
+            document.body.style.backgroundColor="blue"
+        }
+        function greycolor(){
+            document.body.style.backgroundColor="grey"
+        }
+        function changecolor(){
+            console.log("Triggered...")
+            document.body.style.backgroundColor="grey"
+        }
+    </script>
+
+</body>
+</html>

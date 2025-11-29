@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let remove_btn=document.createElement("button")
+        remove_btn.innerHTML="remove"
+        document.body.appendChild(remove_btn)
+        let heading=document.createElement("h1")//create heading tag
+        heading.innerHTML="heading Tag"//using property write coontent
+        console.log(heading)//print
+        let para=document.createElement("p")//create paragraph tag
+        para.innerHTML="paragraph Tag"
+        console.log(para)
+        let image=document.createElement("img")//create  img
+        image.src="https://tse3.mm.bing.net/th/id/OIP.vl_DydRJ8mpfz7EScYwOjwHaKG?pid=Api&P=0&h=220"
+        console.log(image)
+        //create button
+        let btn=document.createElement("button")
+        btn.innerHTML="click Me"
+        console.log(btn)
+        //append the elements to the body
+        document.body.append(heading,para,btn,image)
+        //using one function create all the buttons at a time using for loop and style
+        let arr=["purple","green","blue","gray"]
+        for( let i=0;i<4;i++){
+             let btn=document.createElement("button")
+             document.body.style.justifyItems="center"
+             btn.style.width="100px"
+             btn.style.height="30px"
+             btn.innerHTML=arr[i]
+             btn.style.backgroundColor=arr[i]
+             btn.style.display="flex"
+             btn.style.justifyContent="center"
+             btn.onclick=function(){
+                btn.style.color="black"
+                document.body.style.backgroundColor=arr[i]
+                console.log(arr[i])
+             }
+             document.body.appendChild(btn)
+
+        }
+    </script>
+</body>
+</html>

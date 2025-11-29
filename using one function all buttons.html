@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    img{
+        width: 220px;
+        height:230px;
+    }
+    body{
+        text-align:center;
+        height:100vh;
+    }
+    button{
+        height: 35px;
+        width:100px;
+        border-radius: 5%;
+        border:1px solid grey;
+        cursor:pointer;
+    }
+   </style>
+</head>
+<body>
+    <h1>backgroundColor</h1>
+    <img src="https://i.pinimg.com/originals/9d/89/49/9d8949f82f73443757656b166020d7a8.jpg"><br><br>
+    <button onclick="changecolor('purple')">purple</button><br><br>
+    <button onclick="changecolor('green')">green</button><br><br>
+    <button onclick="changecolor('blue')">blue</button><br><br>
+    <button onclick="changecolor('grey')">grey</button><br>
+
+<script>
+     function changecolor(color){
+        console.log("Triggered....")
+        document.body.style.backgroundColor=color
+     }
+</script>
+</body>
+</html>

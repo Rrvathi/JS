@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let rem_btn=document.createElement("button")
+        rem_btn.innerHTML="remove"
+        let heading=document.createElement("h1")
+        let break_ele=document.createElement("br")
+        heading.innerHTML="Bcakground color"
+        console.log(heading)
+        let image=document.createElement("img")
+        image.src="https://i.pinimg.com/originals/17/67/ec/1767ec31e6894829bf0562f8ee84ef47.jpg"
+        image.style.width="200px"
+        // document.body.style.height="100vh"
+        document.body.style.textAlign="center"
+        document.body.appendChild(heading)
+        document.body.appendChild(image)
+        document.body.appendChild(break_ele)
+        document.body.appendChild(rem_btn)
+        let arr=["red","green","blue","orange"]
+        for(let i=0;i<4;i++){
+        let btn=document.createElement("button")
+        btn.innerHTML=arr[i]
+        btn.id=i
+        btn.style.backgroundColor=arr[i]
+        btn.onclick=function(){
+            console.log(document.getElementById(i))
+        }
+        btn.style.justifyContent="center"
+        btn.style.alignItems="center"
+        // btn.style.paddingLeft="100px"
+        btn.style.display="flex"
+        btn.style.width="100px"
+        btn.style.height="30px"
+        // document.body.style.paddingLeft="350px"
+        document.body.append(btn)
+        }
+
+    </script>
+</body>
+</html>

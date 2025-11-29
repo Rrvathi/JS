@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            height:100vh;
+            align-items: center;
+        }
+        button{
+            width:100px;
+            padding:10px;
+            margin:5px;
+            cursor:pointer;
+            border-radius: 2px;
+        }
+        #card_container{
+            width:550px;
+            height:300px;
+            border:1px solid black;
+            margin:10px;
+            border-radius:5px;
+            display:flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            overflow: scroll;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Cards</h1>
+    <div>
+      <button onclick="addtoCart('red')">red</button>
+      <button onclick="addtoCart('blue')">blue</button>
+      <button onclick="addtoCart('green')">green</button>
+      <button onclick="addtoCart('grey')">grey</button>
+      <button onclick="addtoCard()">clear all</button>
+    </div>
+    <div id="card_container"></div>
+    <script>
+        let parent=document.getElementById("card_container")
+        function addtoCard(){
+            parent.innerHTML=""
+
+        }
+        function addtoCart(color){
+            console.log(color)
+            let cur_ele=document.createElement("div")
+            let delete_btn=document.createElement("button")
+            delete_btn.textContent="X"
+            delete_btn.onclick=function(){
+                console.log(cur_ele)
+                parent.removeChild(cur_ele)
+            }
+            delete_btn.style.width="30px"
+            delete_btn.style.height="30px"
+            delete_btn.style.alignSelf="center"
+            delete_btn.style.marginRight="70px"
+            delete_btn.style.borderRadius="5px"
+            cur_ele.style.border=`1px solid ${color}`
+            cur_ele.style.width="100px"
+            cur_ele.style.height="100px"
+            cur_ele.style.backgroundColor=color
+            cur_ele.style.margin="2px"
+            cur_ele.appendChild(delete_btn)
+            parent.appendChild(cur_ele)
+        }
+    </script>
+</body>
+</html>
