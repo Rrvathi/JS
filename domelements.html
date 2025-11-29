@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="Revathi">
+        im React Developer
+    </p>
+    <p id="heading">
+        Hii JS
+    </p>
+    <div id="h1">
+         nenu div1
+    </div>
+    <p id="mytext">Hello click the button</p>
+    <button onclick="changeText()">
+        click Me
+    </button>
+    
+    <script>
+     document.title="Dom Apllictaion😎"
+    let a=document.getElementById("Revathi")
+    a.innerHTML="<img src='https://tse1.mm.bing.net/th/id/OIP.NXRVCXTwpY4aOV82oFbZugHaJi?pid=Api&P=0&h=220'/>"
+    a.style.color="blue"
+    a.style.fontSize="30px"
+    a.style.backgroundColor="yellow"
+    a.style.textAlign="center"
+    //  a.style.backgroundImage= url('https://tse1.mm.bing.net/th/id/OIP.NXRVCXTwpY4aOV82oFbZugHaJi?pid=Api&P=0&h=220')
+    let b=document.getElementById("heading")
+    b.innerHTML="Hello im learning DOM"
+    b.style.color="blue"
+    let c=document.getElementById("h1")
+    c.style.backgroundColor="grey"
+    c.style.color="aqua"
+    c.style.fontSize="40px"
+    c.innerText="Welcome to Dom"
+    let d=document.getElementById("my text")
+    d.innerText=" Tet change: Hello im button!"
+    </script>
+</body>
+</html>
