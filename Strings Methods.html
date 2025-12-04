@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // concationation
+        let a="Hello   Javascript"
+        let b="welcome"
+        let c="4"
+        // console.log(a+b)
+        // console.log(a.console(b))
+        // lengthmethod
+        console.log(a.length)
+        console.log(b.length)
+        // charatmethod The `charAt()` method returns the character at the specified index in the string. Indexing starts from 0.
+ 
+        console.log(a.charAt(6))
+        //charcodeat method This method returns the Unicode value (a numeric value) of the character at the specified index in the string.
+        console.log(a.charCodeAt(0))
+        // atmethod  Similar to `charAt()`, `at()` returns the character at the specified index in the string.
+        console.log(a.at(1))
+        // This is another way to access characters in a string using bracket notation.
+        console.log(a[1])
+        // The `slice()` method extracts a portion of the string between the specified start and end indices.
+        console.log(a.slice(2,5))
+        //  Similar to `slice()`, `substring()` extracts a portion of the string between the specified start and end indices.
+        console.log(a.substring(2,5))
+        //  Similar to `slice()`, `substring()` extracts a portion of the string between the specified start and end indices.
+        console.log(a.substr(1,4))
+        // This method converts all the characters in a string to uppercase.
+        console.log(a.toUpperCase())
+        // This method converts all the characters in a string to lowercase.
+        console.log(a.toLocaleLowerCase())
+        // This method removes whitespace (spaces, tabs, and newlines) from the beginning and end of a string.
+        console.log(a.trim())
+        // trimstart
+        console.log(a.trimStart())
+        // trimend
+        console.log(a.trimEnd())
+        // padstart
+        console.log(c.padStart(3,'0'))
+        // padend
+        console.log(c.padEnd(4,'0'))
+        //  repeatmethod
+        console.log(c.repeat(3))
+        // replacemethod
+        console.log(a.replace("Hello","Hii"))
+        // replaceall
+        const d="hello, python hello, javascript hello,python"
+        console.log(d.replaceAll('Hello','Hii'))
+        // splitmethod
+        let str="Mahesh NTR prabha RC AA Sai";
+        let heros= str.split(",");
+        console.log(heros);
+        console.log(str.indexOf("a"))
+        console.log(str.indexOf("a",5))
+        console.log(str.lastIndexOf("a"))
+        console.log(str.search("Mahesh"))
+       </script>
+</body>
+</html>
